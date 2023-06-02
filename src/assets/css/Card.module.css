@@ -1,0 +1,35 @@
+.Slider_card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 16rem;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 10px;
+}
+
+.Slider_card img {
+  margin-top: -20%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Slider_card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.Slider_card p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Slider_card .btnn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
