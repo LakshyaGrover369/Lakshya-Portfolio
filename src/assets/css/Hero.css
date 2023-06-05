@@ -33,7 +33,6 @@
   #hero-section {
     font-family:  "cursive";
     flex-direction: column;
-    height: 500px;
   }
   #heading{
     margin: 8% 0%;
