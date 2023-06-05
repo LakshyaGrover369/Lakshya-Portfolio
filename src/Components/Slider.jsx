@@ -1,5 +1,8 @@
 import '../assets/css/Slider.css';
+import React, { useEffect } from 'react';
 import { v4 as uuidv4 } from "uuid";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Card from'../SubComponents/Card';
 import Carousel from'../SubComponents/Carousel';
 import site1img from '../assets/images/site1img.jpg';
@@ -8,6 +11,12 @@ import site3img from '../assets/images/site3img.png';
 import site4img from '../assets/images/site4img.png';
 
 function App() {
+
+  useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+  },[])
+
   let cards = [
     {
       key: uuidv4(),
@@ -47,7 +56,7 @@ function App() {
         id="Slider_Carousal"
         cards={cards}
         height="500px"
-        // margin="0 auto"
+        data-aos="flip-down"
         width="80%"
         offset={2}
         showArrows={false}

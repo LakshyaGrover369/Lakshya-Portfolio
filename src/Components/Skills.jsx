@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../assets/css/Skills.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Skills = () => {
+
+    useEffect(()=>{
+        AOS.init({duration: 3000,offset: -800});
+        AOS.refresh();
+    },[])
+
     return (
         <section  id='skills' >
-            <div className="skill_main">
+            <div data-aos="flip-up" className="skill_main">
                 <h1 className="skill_heading">Skills</h1>
                 <div className="skill" >
                     <div className="skill_name">HTML</div>

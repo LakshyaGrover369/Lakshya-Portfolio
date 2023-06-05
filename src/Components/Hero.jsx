@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react';
 import image1 from '../assets/images/my_img.png';
 import '../assets/css/Hero.css'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Hero = () => {
     
     var [letterss, setLetters] = React.useState("");
     var [length, setLength] = React.useState(0);
     var [index, setIndex] = React.useState(0);
 
-    // useEffect(()=>{
-    // AOS.init({duration: 3000,offset: -800})
-    // },[])
+    useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+    },[])
     
     useEffect(()=>{
     setTimeout(typing,40);
@@ -37,9 +38,9 @@ const Hero = () => {
   return (
     <section id='hero-section'>
         <div id="photo">    
-            <img id='me' src={image1} data-aos="fade-up" alt='err'></img>
+            <img id='me' src={image1} data-aos="fade-right" alt='err'></img>
         </div>
-        <h1 id='heading'>{letterss} </h1>
+        <h1 data-aos="fade-left" id='heading'>{letterss} </h1>
     </section> 
   )
 }
