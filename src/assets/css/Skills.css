@@ -37,13 +37,22 @@
 
 .progress-bar{
     background-color: #a9a9a9;
+}
+.pb1{
+    width: 90%;
+}
+.pb2{
+    width: 85%;
+}
+.pb3{
     width: 80%;
+}
+.pb4{
+    width: 75%;
 }
 
 @media  screen and (max-width: 700px) {
-    /* #skills{
-        height:50vh;
-    } */
+    
     .skill_main {
       height: fit-content;
       width: 70%;

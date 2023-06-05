@@ -20,22 +20,22 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contactSection '>
-            <div class="wrap-contact100">
-                <form  ref={form} onSubmit={sendEmail} class="contact100-form validate-form">
-                    <span class="contact100-form-title">
+            <div className="wrap-contact100">
+                <form  ref={form} onSubmit={sendEmail} className="contact100-form validate-form">
+                    <span className="contact100-form-title">
                         Contact Us
                     </span>
-                    <div class="wrap-input100 validate-input" data-validate="Name is required">
-                        <input class="input100" type="text" name="name" placeholder="Full Name"/>
+                    <div className="wrap-input100 validate-input" data-validate="Name is required">
+                        <input className="input100" type="text" name="name" placeholder="Full Name"/>
                     </div>
-                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email"/>
+                    <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input className="input100" type="text" name="email" placeholder="Email"/>
                     </div>
-                    <div class="wrap-input100 validate-input" data-validate="Message is required">
-                        <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                    <div className="wrap-input100 validate-input" data-validate="Message is required">
+                        <textarea className="input100" name="message" placeholder="Your Message"></textarea>
                     </div>
-                    <div class="wrapBtn">
-                        <button type="submit" value="send" class="Wrap_button">
+                    <div className="wrapBtn">
+                        <button type="submit" value="send" className="Wrap_button">
                             Send Email
                         </button>
                     </div>

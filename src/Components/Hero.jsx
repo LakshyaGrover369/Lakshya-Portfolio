@@ -36,11 +36,11 @@ const Hero = () => {
 
   return (
     <section id='hero-section'>
-        <div id="photooo">    
+        <div id="photo">    
             <img id='me' src={image1} data-aos="fade-up" alt='err'></img>
         </div>
-        <h1 id='heading1'>{letterss} </h1>
-    </section>
+        <h1 id='heading'>{letterss} </h1>
+    </section> 
   )
 }
 

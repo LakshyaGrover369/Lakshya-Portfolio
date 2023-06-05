@@ -12,25 +12,25 @@ function App() {
     {
       key: uuidv4(),
       content: (
-        <Card imagen={site1img} title={`Quote Generator`} desc={` A website that shows motivational quotes`} demolink={`https://statuesque-baklava-361a1d.netlify.app`}  codelink={`https://github.com/LakshyaGrover369/quote-of-the-day.git`}  />
+        <Card imagen={site1img} title={`Quote Generator`} desc={` A website that shows motivational quotes`} demolink={`https://inspiquote.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/quote-of-the-day.git`}  />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen={site2img}  title={`Simple way of Parking`} desc={` A website that help in managing the parking system of cars`}  demolink={`https://delightful-torrone-54dfee.netlify.app`}  codelink={`https://github.com/LakshyaGrover369/parking-lot.git`}   />
+        <Card imagen={site2img}  title={`Simple way of Parking`} desc={` A website that help in managing the parking system of cars`}  demolink={`https://simplewayofparking.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/parking-lot.git`}   />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen={site3img}  title={`Word Counter`} desc={` A website that shows Precise informations of paragraphs and words`}  demolink={`https://coruscating-otter-8e053d.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/word-counter.git`}   />
+        <Card imagen={site3img}  title={`Word Counter`} desc={` A website that shows Precise informations of paragraphs and words`}  demolink={`https://wordscounti.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/word-counter.git`}   />
       )
     },
     {
       key: uuidv4(),
       content: (
-        <Card imagen={site4img}  title={`Quiz Time`} desc={` A website that take quizez and shows your result and overall Performance`} demolink={`https://curious-semolina-3448ee.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/Quiz_website.git`}  />
+        <Card imagen={site4img}  title={`Quiz Time`} desc={` A website that take quizez and shows your result and overall Performance`} demolink={`https://quizzoi.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/Quiz_website.git`}  />
       )
     }
     // {
@@ -44,11 +44,11 @@ function App() {
     <div className="Projects" id="projectss">
       <h1>Projects</h1>
       <Carousel
-        className="Slider_Carousal"
+        id="Slider_Carousal"
         cards={cards}
         height="500px"
-        width="35%"
-        margin="0 auto"
+        // margin="0 auto"
+        width="80%"
         offset={2}
         showArrows={false}
       />

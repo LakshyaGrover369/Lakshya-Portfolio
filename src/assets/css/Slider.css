@@ -1,29 +1,21 @@
-.Carousel {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+  .css-doq0dk{
+    width: 50% ;
   }
 
-h1{
-    color: white;
-    text-align: center;
-    margin-bottom:5%;
-}
+  h1{
+      color: white;
+      text-align: center;
+      margin-bottom:5%;
+  }
 
 
 .Projects{
   font-family: sans-serif;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: fit-content; */
+  height: fit-content;
 }
 
-@media screen and (max-width: 700px){
-  .Slider_Carousal{
-    width: 100%;
-  }
-}

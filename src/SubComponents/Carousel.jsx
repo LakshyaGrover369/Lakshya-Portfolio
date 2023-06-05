@@ -22,6 +22,7 @@ export default function Carroussel(props) {
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel
+        className='sli_carousal'
         slides={cards}
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}
