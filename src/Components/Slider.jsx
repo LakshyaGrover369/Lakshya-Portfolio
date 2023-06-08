@@ -9,6 +9,7 @@ import site1img from '../assets/images/site1img.jpg';
 import site2img from '../assets/images/site2img.png';
 import site3img from '../assets/images/site3img.png';
 import site4img from '../assets/images/site4img.png';
+import site5img from '../assets/images/site5img.png';
 
 function App() {
 
@@ -18,6 +19,13 @@ function App() {
   },[])
 
   let cards = [
+    
+    {
+      key: uuidv4(),
+      content: (
+        <Card imagen={site5img}  title={`Live Covid Tracker`} desc={` A website that shows the live covid results in our country India`} demolink={`https://livecovidcasestracker.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/live-covid-tracker`}  />
+      )
+    },
     {
       key: uuidv4(),
       content: (
@@ -39,7 +47,7 @@ function App() {
     {
       key: uuidv4(),
       content: (
-        <Card imagen={site4img}  title={`Quiz Time`} desc={` A website that take quizez and shows your result and overall Performance`} demolink={`https://quizzoi.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/Quiz_website.git`}  />
+        <Card imagen={site4img}  title={`Quiz Time`} desc={` A website that take quizez and shows your result and overall performance`} demolink={`https://quizzoi.netlify.app/`}  codelink={`https://github.com/LakshyaGrover369/Quiz_website.git`}  />
       )
     }
     // {
